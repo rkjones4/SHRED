@@ -1,0 +1,13 @@
+PointNet++ models originally sourced from https://github.com/erikwijmans/Pointnet2_PyTorch.
+
+The specific files used were before commit erikwijmans/Pointnet2_PyTorch@22e8cf5 .
+
+The _ext.*.so may need to be rebuilt depending on the machine specs being used. 
+
+If importing this file leads to a cuda error, try these steps:
+
+1. Delete _ext.*.so
+2. Go to the rebuild folder
+2. Run >python3 setup.py build_ext --inplace
+3. Move the newly generated _ext file, from the rebuild/pointnet2 folder, to where the previous one was located
+
